@@ -402,8 +402,8 @@ footer{background:linear-gradient(160deg,#04062e 0%,#080d40 100%);border-top:3px
     <div class="nav-links" id="navLinks">
       <a href="index.html" class="nav-link">Home</a>
       <a href="#services" class="nav-link">Repair Services</a>
-      <a href="web-design.html" class="nav-link">Website Design</a>
-      <a href="web-design.html#portfolio" class="nav-link">Portfolio</a>
+      <a href="#web-design" class="nav-link">Website Design</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
 
@@ -421,8 +421,8 @@ footer{background:linear-gradient(160deg,#04062e 0%,#080d40 100%);border-top:3px
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#127968;</span>Home</a>
   <a href="#services" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#128241;</span>Repair Services</a>
-  <a href="web-design.html" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#127760;</span>Website Design</a>
-  <a href="web-design.html#portfolio" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#128444;</span>Portfolio</a>
+  <a href="#web-design" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#127760;</span>Website Design</a>
+  <a href="#portfolio" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#128444;</span>Portfolio</a>
   <a href="#contact" class="mob-link" onclick="closeMobile()"><span class="m-ico">&#128172;</span>Contact</a>
   <div class="mob-cta-row">
     <a href="contact.html" class="mob-btn-book" onclick="closeMobile()">&#128242; Book a Repair</a>
@@ -840,5 +840,37 @@ function submitBook(){
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity="1";e.target.style.transform="translateY(0)";}});},{threshold:.08});
 document.querySelectorAll(".step-card,.svc-card,.faq-item").forEach(el=>{el.style.opacity="0";el.style.transform="translateY(20px)";el.style.transition="opacity .5s ease, transform .5s ease";observer.observe(el);});
 </script>
+<!-- WEB DESIGN SECTION -->
+<section id="web-design" style="background:#06080f;padding:80px 20px;text-align:center;border-top:3px solid #0a0ef5;">
+  <div style="max-width:700px;margin:0 auto;">
+    <p style="font-family:'Barlow',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#0a0ef5;margin-bottom:12px;">&#127760; Website Design</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,8vw,5rem);color:#fff;line-height:.95;margin-bottom:20px;">We Build Websites<br><em style="color:#0a0ef5;">For Small Businesses</em></h2>
+    <p style="font-family:'Barlow',sans-serif;color:rgba(255,255,255,.6);font-size:1rem;line-height:1.7;margin-bottom:32px;">Affordable, mobile-friendly websites for local businesses. Fast turnaround, no bloat, no agency pricing.</p>
+    <a href="tel:5742929693" style="display:inline-block;background:#0a0ef5;color:#fff;font-family:'Barlow',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:14px 32px;border-radius:8px;text-decoration:none;">&#128222; Call to Learn More</a>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" style="background:#0d1117;padding:80px 20px;text-align:center;border-top:3px solid #ffe600;">
+  <div style="max-width:700px;margin:0 auto;">
+    <p style="font-family:'Barlow',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#ffe600;margin-bottom:12px;">&#128444; Portfolio</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,8vw,5rem);color:#fff;line-height:.95;margin-bottom:20px;">Our Work</h2>
+    <p style="font-family:'Barlow',sans-serif;color:rgba(255,255,255,.6);font-size:1rem;line-height:1.7;">Portfolio coming soon. Call us to see examples of websites we've built.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" style="background:#06080f;padding:80px 20px;text-align:center;border-top:3px solid #ff0022;">
+  <div style="max-width:700px;margin:0 auto;">
+    <p style="font-family:'Barlow',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#ff0022;margin-bottom:12px;">&#128172; Contact</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,8vw,5rem);color:#fff;line-height:.95;margin-bottom:20px;">Get In Touch</h2>
+    <p style="font-family:'Barlow',sans-serif;color:rgba(255,255,255,.6);font-size:1rem;line-height:1.7;margin-bottom:32px;">Based in the Michiana area — South Bend, Mishawaka, and Elkhart, Indiana.<br>Reach us however works best for you.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+      <a href="tel:5742929693" style="display:inline-flex;align-items:center;gap:8px;background:#ff0022;color:#fff;font-family:'Barlow',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:14px 28px;border-radius:8px;text-decoration:none;">&#128222; Call Now</a>
+      <a href="mailto:techonwheelsrepair@gmail.com" style="display:inline-flex;align-items:center;gap:8px;background:#0a0ef5;color:#fff;font-family:'Barlow',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:14px 28px;border-radius:8px;text-decoration:none;">&#128231; Email Us</a>
+      <a href="#book" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.25);color:#fff;font-family:'Barlow',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:12px 28px;border-radius:8px;text-decoration:none;">&#128295; Book Repair</a>
+    </div>
+  </div>
+</section>
 </body>
 </html>
